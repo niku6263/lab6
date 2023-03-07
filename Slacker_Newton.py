@@ -28,7 +28,7 @@ for n in range(100):
 
     ([[x1n],[x2n]]) = Z
 
-    if(x1n-0.9986069440971734 >= tol and (x2n+0.105530492293077)>=tol):
+    if(abs(x1n-0.9986069440971734) >= tol and abs(x2n+0.105530492293077)>=tol):
         q = np.log(abs(xn1-0.5))/np.log(abs(x1n-0.5))
     else:
         q = np.log(abs(xn1-0.5))/np.log(abs(x1n-0.5))
